@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portfolio - Aryan Bhalerao </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      /* ===== FLOATING LEFT SIDEBAR NAV ===== */
+      #left-sidebar {
+        position: fixed;
+        left: 18px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        border-radius: 20px;
+        padding: 18px 10px;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.1), 0 0 0 1px rgba(0,0,0,0.04);
+      }
+      #left-sidebar a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        writing-mode: vertical-lr;
+        text-orientation: mixed;
+        transform: rotate(180deg);
+        color: rgba(0,0,0,0.6);
+        font-family: 'Poppins', sans-serif;
+        font-size: 10.5px;
+        font-weight: 600;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 10px 6px;
+        border-radius: 10px;
+        transition: color 0.25s ease, background 0.25s ease, transform 0.25s ease;
+        position: relative;
+      }
+      #left-sidebar a::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -3px;
+        transform: translateX(-50%) scaleX(0);
+        width: 18px;
+        height: 2px;
+        border-radius: 2px;
+        background: #f96d00;
+        transition: transform 0.25s ease;
+      }
+      #left-sidebar a:hover,
+      #left-sidebar a.active {
+        color: #000;
+        background: rgba(0,0,0,0.05);
+        text-decoration: none;
+      }
+      #left-sidebar a:hover::after,
+      #left-sidebar a.active::after {
+        transform: translateX(-50%) scaleX(1);
+      }
+      /* dot separator between items */
+      #left-sidebar .nav-dot {
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: rgba(0,0,0,0.2);
+        margin: 2px 0;
+      }
+
+      /* Desktop version adjustments */
+      @media (min-width: 992px) {
+        #left-sidebar {
+          top: 30px; /* Aligned upside (upper side) */
+          transform: none; 
+          align-items: stretch; 
+          padding: 20px 15px;
+          gap: 4px;
+        }
+        #left-sidebar a {
+          writing-mode: horizontal-tb; /* Horizontal text */
+          transform: none; 
+          font-size: 12px;
+          padding: 10px 15px;
+          justify-content: flex-start;
+        }
+        #left-sidebar a::after {
+          left: 15px; 
+          bottom: 2px;
+          transform: translateX(0) scaleX(0);
+          transform-origin: left;
+          width: 25px;
+        }
+        #left-sidebar a:hover::after,
+        #left-sidebar a.active::after {
+          transform: translateX(0) scaleX(1);
+        }
+        #left-sidebar .nav-dot {
+          display: none; /* Hide dots in desktop layout */
+        }
+      }
+
+      /* Make subtext darker */
+      .resume-wrap p {
+        color: #333;
+      }
+      .resume-wrap .position {
+        color: #333;
+      }
+    </style>
+  </head>
+  <body data-spy="scroll" data-offset="300">
+
+    <!-- Floating Left Sidebar Navigation -->
+    <nav id="left-sidebar" aria-label="Primary navigation">
+      <a href="#about-section" id="nav-about">About</a>
+      <div class="nav-dot"></div>
+      <a href="#skills-section" id="nav-skills">Skills</a>
+      <div class="nav-dot"></div>
+      <a href="#education-section" id="nav-education">Education</a>
+      <div class="nav-dot"></div>
+      <a href="#experience-section" id="nav-experience">Experience</a>
+      <div class="nav-dot"></div>
+      <a href="#certifications-section" id="nav-certifications">Certifications</a>
+      <div class="nav-dot"></div>
+      <a href="#services-section" id="nav-projects">Projects</a>
+    </nav>
+	  <section class="hero-wrap js-fullheight">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
+          <div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
+          	<div class="text text-center">
+          		<span class="subheading">Hi! I am</span>
+		  				<h1>Aryan Bhalerao</h1>
+			  				<h2>I'm a 
+								  <span
+								     class="txt-rotate"
+								     data-period="2000"
+								     data-rotate='[ "Software Developer", "Fullstack Developer", "Android Developer"]'></span>
+								</h2>
+							</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mouse">
+				<a href="#" class="mouse-icon">
+					<div class="mouse-wheel"><span class="ion-ios-arrow-round-down"></span></div>
+				</a>
+			</div>
+    </section>
+
+    <section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
+    	<div class="container">
+		          <div class="col-md-12 heading-section text-center ftco-animate">
+					<p> &nbsp;</p>
+					<p> &nbsp;</p>
+					<p> &nbsp;</p>
+					<h1 class="big">About</h1>
+		            <h2 class="mb-4">About Me</h2>
+		            <h4>I am a recent Computer Engineering graduate of the batch of 2025, looking for SDE, Fullstack Developer and Android Developer Roles. I have 1 year of work experience in fullstack development. My certifications include NPETL Cloud Computing, Meta Frontend Developer, Meta Backend Developer, Google Data Analyst and Microsoft Power BI. 
+				  <div class="socials">
+					<h3>Connect with Me</h3>
+					<a href="https://github.com/aryanbhalerao" target="_blank">
+						<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="40" height="40">
+					</a>
+					<a href="https://in.linkedin.com/in/aryan-bhalerao-442551234" target="_blank">
+						<img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="40" height="40">
+					</a>
+					<br>
+					<a href="Resume_AryanB_SDE_06042026.pdf" download>
+						<button>Download Resume</button>
+					</a>
+					<br>
+					<a href="mailto:aryan.bhalerao@protonmail.com">
+						<button>Email Me</button>
+					</a>
+				</div>
+				
+				<style>
+					.socials {
+						text-align: center;
+						padding: 10px;
+					}
+					.socials a {
+						margin: 10px;
+						display: inline-block;
+					}
+					.socials button {
+						margin-top: 10px;
+						padding: 10px 20px;
+						font-size: 16px;
+						background-color: #007bff;
+						color: white;
+						border: none;
+						cursor: pointer;
+						border-radius: 5px;
+					}
+					.socials button:hover {
+						background-color: #0056b3;
+					}
+				</style>
+
+				<p> &nbsp;</p>
+				<p> &nbsp;</p>
+				<p> &nbsp;</p>
+				
+    	</div>
+    </section>
+
+    <section class="ftco-section ftco-no-pb goto-here" id="resume-section">
+    	<div class="container">
+    		<div class="row">
+					<div class="col-md-12">
+					  <div id="skills-section" class= "page one">
+					  	<h2 class="heading">Skills</h2>
+						  <div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+	    						<i class="ion-ios-bulb" style="color: white;"></i>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<h2>Fullstack Development - Backend</h2>
+		    					<p>RESTful APIs | Express.js | Node.js | Django | Flask | Maven | Spring | ASP .NET | Javascript | PHP </p>
+		    				</div>
+	    				</div>
+						<div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+	    						<i class="ion-ios-bulb" style="color: white;"></i>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<h2>Fullstack Development - Frontend</h2>
+		    					<p>React.js | Angular.js | React Native | Flutter | HTML/CSS | Typescript | Javascript | Lua</p>
+		    				</div>
+	    				</div>
+						<div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+	    						<i class="ion-ios-bulb" style="color: white;"></i>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<h2>Database Management</h2>
+		    					<p>NoSQL Databases | MySQL | Postgre SQL | Oracle SQL | MongoDB | Google Cloud (GCP) | JSON | CSV </p>
+		    				</div>
+	    				</div>
+						<div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+	    						<i class="ion-ios-bulb" style="color: white;"></i>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<h2>Data Analytics</h2>
+		    					<p>Microsoft Power BI | Google BigQuery | Python Science | DAX | Microsoft Excel | Google Sheets | Tableau</p>
+		    				</div>
+	    				</div>
+						<div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+	    						<i class="ion-ios-bulb" style="color: white;"></i>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<h2>Artificial Intellegence Machine Learning (AIML)</h2>
+		    					<p>Seaborn | MatplotLib | SciKit | Tensor Flow | Keras | OpenCV | YOLO v3</p>
+		    				</div>
+	    				</div>
+					  </div>
+
+					  <div id="education-section" class= "page two">
+					  	<h2 class="heading">Education</h2>
+					    <div class="resume-wrap d-flex ftco-animate">
+					    	<div class="icon d-flex align-items-center justify-content-center">
+					    		<i class="ion-ios-school" style="color: white;"></i>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">2021-2025</span>
+		    					<h2>B.Tech in Computer Science</h2>
+		    					<span class="position">MIT Academy of Engineering | Affiliated to SPPU </span>
+								<p>Grade: 7.6 CGPA</p>
+	    					</div>
+	    				</div>
+	    				<div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+					    		<i class="ion-ios-school" style="color: white;"></i>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">2021</span>
+		    					<h2>12th Science</h2>
+		    					<span class="position">Dr D.Y. Patil Jr. College, Pimpri | Maharashtra HSC </span>
+		    					<p>Grade: 89.5&percnt;</p>
+		    				</div>
+	    				</div>
+	    				<div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+					    		<i class="ion-ios-school" style="color: white;"></i>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">2019</span>
+		    					<h2>10th</h2>
+		    					<span class="position">SNBP International School, Morwadi | CBSE </span>
+		    					<p>Grade: 89.8&percnt; </p>
+		    				</div>
+	    				</div>
+					  </div>
+
+					  <div id="experience-section" class= "page three">
+						<h2 class="heading">Experience</h2>
+					  <div class="resume-wrap d-flex ftco-animate">
+						  <div class="icon d-flex align-items-center justify-content-center">
+						  	<i class="ion-ios-briefcase" style="color: white;"></i>
+						  </div>
+						  <div class="text pl-3">
+							  <span class="date">Feb - Jun 2025</span>
+							  <h2>Visimaster | Varad Automation and Robotics Pvt. Ltd.</h2>
+							  <p>Software Developer Intern</p>
+						  </div>
+					  </div>
+					  <div class="resume-wrap d-flex ftco-animate">
+						  <div class="icon d-flex align-items-center justify-content-center">
+						  	<i class="ion-ios-briefcase" style="color: white;"></i>
+						  </div>
+						  <div class="text pl-3">
+							  <span class="date">Dec 2025 - Mar 2026</span>
+							  <h2>Chitragupta Urban Tech Pvt. Ltd.</h2>
+							  <p>Software Developer Engineer</p>
+						  </div>
+					  </div>
+					</div>
+
+					<div id="certifications-section" class= "page four">
+						<h2 class="heading">Certifications</h2>
+					  <div class="resume-wrap d-flex ftco-animate">
+						  <div class="icon d-flex align-items-center justify-content-center">
+						  	<i class="ion-ios-ribbon" style="color: white;"></i>
+						  </div>
+						  <div class="text pl-3">
+							  <span class="date">2024</span>
+							  <h2>Meta Frontend Developer Professional</h2>
+							  <span class="position">NPETL</span>
+						  </div>
+					  </div>
+					  <div class="resume-wrap d-flex ftco-animate">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<i class="ion-ios-ribbon" style="color: white;"></i>
+						</div>
+						<div class="text pl-3">
+							<span class="date">2023</span>
+							<h2>Meta Backend Developer Professional</h2>
+							<span class="position">Cisco Networking Academy</span>
+						</div>
+					</div>
+					<div class="resume-wrap d-flex ftco-animate">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<i class="ion-ios-ribbon" style="color: white;"></i>
+						</div>
+						<div class="text pl-3">
+							<span class="date">2024</span>
+							<h2>Google Data Analytics Professional</h2>
+							<span class="position">AWS Academy</span>
+						</div>
+					</div>
+					<div class="resume-wrap d-flex ftco-animate">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<i class="ion-ios-ribbon" style="color: white;"></i>
+						</div>
+						<div class="text pl-3">
+							<span class="date">2024</span>
+							<h2>Microsoft Power BI Professional</h2>
+							<span class="position">AWS Academy</span>
+						</div>
+					</div>
+					<div class="resume-wrap d-flex ftco-animate">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<i class="ion-ios-ribbon" style="color: white;"></i>
+						</div>
+						<div class="text pl-3">
+							<span class="date">2023</span>
+							<h2>NPETL Cloud Computing</h2>
+							<span class="position">Red Hat Academy</span>
+						</div>
+					</div>
+					  <div class="resume-wrap d-flex ftco-animate">
+						  <div class="icon d-flex align-items-center justify-content-center">
+						  	<i class="ion-ios-ribbon" style="color: white;"></i>
+						  </div>
+						  <div class="text pl-3">
+							  <span class="date">2024</span>
+							  <h2>NPETL IoT and Industry 4.0</h2>
+							  <span class="position">NPETL</span>
+						  </div>
+					  </div>
+					  <div class="resume-wrap d-flex ftco-animate">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<i class="ion-ios-ribbon" style="color: white;"></i>
+						</div>
+						<div class="text pl-3">
+							<span class="date">2023</span>
+							<h2>Cisco Enterprice Networking, Security and Automation</h2>
+							<span class="position">Cisco Networking Academy</span>
+						</div>
+					</div>
+					<div class="resume-wrap d-flex ftco-animate">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<i class="ion-ios-ribbon" style="color: white;"></i>
+						</div>
+						<div class="text pl-3">
+							<span class="date">2024</span>
+							<h2>AWS Academy Machine Learning Foundations</h2>
+							<span class="position">AWS Academy</span>
+						</div>
+					</div>
+					<div class="resume-wrap d-flex ftco-animate">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<i class="ion-ios-ribbon" style="color: white;"></i>
+						</div>
+						<div class="text pl-3">
+							<span class="date">2024</span>
+							<h2>AWS Academy Cloud Computing Foundations</h2>
+							<span class="position">AWS Academy</span>
+						</div>
+					</div>
+					<div class="resume-wrap d-flex ftco-animate">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<i class="ion-ios-ribbon" style="color: white;"></i>
+						</div>
+						<div class="text pl-3">
+							<span class="date">2023</span>
+							<h2>Red Hat System Administration II</h2>
+							<span class="position">Red Hat Academy</span>
+						</div>
+					</div>
+					</div>
+			  </div>
+    	</div>
+    </section>
+
+    <section class="ftco-section" id="services-section">
+    	<div class="container">
+    		<div class="row justify-content-center py-5 mt-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+          </div>
+        </div>
+    		<div class="row">
+					<div class="col-md-12 text-center d-flex ftco-animate">
+						<a href="#" class="services-1 shadow">
+							<div class="desc">
+								<i class="ion-ios-folder" style="color: white;"></i>
+								<h3 class="mb-5">Cryptocurrency Dashboard and Tracker</h3>
+								<p>Backend Development | Dashboard Development | Python | Web Scraping | API <br> • Implemented a cryptocurrency dashboard, leaderboard, search and tracker using Python, Streamlit and Flask. Deployed using streamlitcloud. <br> • Deployed at https://cryptocurrencydash.streamlit.app/ <br> • Source Code: https://github.com/aryanbhalerao/cryptocurrencyDash</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-12 text-center d-flex ftco-animate">
+						<a href="#" class="services-1 shadow">
+							<div class="desc">
+								<i class="ion-ios-folder" style="color: white;"></i>
+								<h3 class="mb-5">Personal Portfolio Website</h3>
+								<p>Frontend Development | React.js | Javascript <br>
+									• Implemented my portfolio website using React.js framework.<br>
+									• Deployed at https://aryanbhalerao-portfolio.vercel.app/<br>
+									• Source Code: https://github.com/aryanbhalerao/aryanbhalero portfolio
+								</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-12 text-center d-flex ftco-animate">
+						<a href="#" class="services-1 shadow">
+							<div class="desc">
+								<i class="ion-ios-folder" style="color: white;"></i>
+								<h3 class="mb-5">Dashboard and Data Classification Program for Component Classifier Machine</h3>
+								<p>Dashboard Development | Javascript | ASP .NET <br>
+                                 • Implemented a dashboard and data classification software for industrial component classifier machine. <br>
+                                 • Source Code: https://github.com/aryanbhalerao/dotNETClassifierDashboard</p>
+							</div>
+						</a>
+					</div>
+				</div>
+    	</div>
+    </section>
+ 
+    <footer class="ftco-footer ftco-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+
+  <script>
+    // Smooth-scroll for sidebar links
+    document.querySelectorAll('#left-sidebar a').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        var targetId = this.getAttribute('href');
+        var target = document.querySelector(targetId);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Scroll Spy — highlight active sidebar link
+    var sections = [
+      { id: 'about-section',          navId: 'nav-about' },
+      { id: 'skills-section',         navId: 'nav-skills' },
+      { id: 'education-section',      navId: 'nav-education' },
+      { id: 'experience-section',     navId: 'nav-experience' },
+      { id: 'certifications-section', navId: 'nav-certifications' },
+      { id: 'services-section',       navId: 'nav-projects' },
+    ];
+
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          document.querySelectorAll('#left-sidebar a').forEach(function(a) { a.classList.remove('active'); });
+          var match = sections.find(function(s) { return s.id === entry.target.id; });
+          if (match) {
+            var el = document.getElementById(match.navId);
+            if (el) el.classList.add('active');
+          }
+        }
+      });
+    }, { threshold: 0.25 });
+
+    sections.forEach(function(s) {
+      var el = document.getElementById(s.id);
+      if (el) observer.observe(el);
+    });
+  </script>
+    
+  </body>
+</html>
